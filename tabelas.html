@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+        tabelas
+    </title>
+    <style>
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ccd;
+            padding: 5px;
+            text-align: left;
+        }
+
+        body {
+            font-family: sans-serif;
+
+        }
+
+        table capition {
+            font-style: inherit;
+            font-size: 12px;
+            margin-bottom: 5px;
+
+        }
+    </style>
+    <script>
+        function dizerOi() {
+            alert("Ola, mundo!")
+        }
+        
+        function normal() {
+            const numeros = [1, 2, 3, 4, 5]
+            alert(numeros)
+        }
+        function dobrada() {
+            const num = [1, 2, 3, 4, 5]
+            const dobrados = num.map(x => `Numero: ${x * 2}\n`)
+            alert(dobrados)
+        }
+    </script>
+</head>
+
+<body>
+    <p>
+        Tebelas e distâncias
+    </p>
+    <div class="responsive-table">
+        <table>
+            <caption>Descreção da Tabela</caption>
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                    <th>Título 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                    <td>Corpo 4</td>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="2">AQUI</td>
+                    <td>Corpo 4</td>
+                </tr>
+                <tr>
+                    <td>Corpo 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <section>
+            <h1>Cabeça</h1>
+            <p>O formulário</p>
+            <fieldset>
+                <legend>Descrição</legend>
+            </fieldset>
+            <p>
+                <imput type="text" id="nome" name="nome" placeholder="Seu nome">
+                </p>
+            </fieldset>
+        </section>
+    </form>
+    <button onclick="normal()">lista normal</button>
+    <button onclick="dobrada()">lista dobrada</button>
+
+</body>
+
+</html>
