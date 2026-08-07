@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lag='en'>
+    <meta charset="UTF-8">
+    <meta name="'viewport" content='width=device-width,initial-scale=1.0'>
+
+<style>
+      .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ccd;
+            padding: 5px;
+            text-align: left;
+        }
+
+        body {
+            font-family: sans-serif;
+
+        }
+        label {
+            cursor: pointer;
+        }
+        butto {
+            border: 20px salmon;
+            padding: 5px;
+        }
+</style>
+<head>
+    <boddy>
+        <form action="#"method="get" target="_blank"> <!-- campos que tiverem dentro do formulario teram irão ter oarâmetros de url-->
+            <fieldset>
+                <legend> Fruit juice size</legend>
+                <p>
+                    <input type="radio" name="size" id="'size_1" value="'small">
+                    <label for="size_1">Small</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_2" value="medium">
+                    <label for="size_2">Medium</label>
+                </p> 
+                <p> 
+                    <input type="radio" name='size' id="size_3" value="large" checked>
+                    <label for="size_3">Larger</label>
+                <p>
+                     <label for="data">Data:</label>
+                    <input tyoe="date" name="date" id="date" value="'20-04-3030">
+                </p>
+            </fieldset>
+            <button type="'reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </boddy>
+</head>
+</html>
